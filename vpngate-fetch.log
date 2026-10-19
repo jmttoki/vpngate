@@ -3461,3 +3461,20 @@
 [2026-10-19 16:18:11]   ... 另有 37 个未列出
 [2026-10-19 16:18:11] vpngate.txt 已重建: 1248 条
 [2026-10-19 16:18:11] 完成
+[2026-10-19 19:18:05] 开始抓取 VPNGate 数据
+[2026-10-19 19:18:07] API 返回 85 个 TCP 中继
+[2026-10-19 19:18:07] vpngate.csv 现有 1248 个 Hostname
+[2026-10-19 19:18:07] 新增 48 个节点,忽略已存在 37 个
+[2026-10-19 19:18:07]   + vpn696985249.opengw.net (Croatia (LOCAL Name: Hrvatska), 223.78 Mbps, TCP:443)
+[2026-10-19 19:18:07]   + vpn659056440.opengw.net (Croatia (LOCAL Name: Hrvatska), 223.28 Mbps, TCP:443)
+[2026-10-19 19:18:07]   + vpn648581557.opengw.net (Croatia (LOCAL Name: Hrvatska), 212.37 Mbps, TCP:443)
+[2026-10-19 19:18:07]   + vpn359189912.opengw.net (Egypt, 32.00 Mbps, TCP:1917)
+[2026-10-19 19:18:07]   + vpn737279530.opengw.net (Japan, 1980.92 Mbps, TCP:1999)
+[2026-10-19 19:18:07]   + vpn479407213.opengw.net (Japan, 904.06 Mbps, TCP:1367)
+[2026-10-19 19:18:07]   + vpn768234621.opengw.net (Japan, 793.45 Mbps, TCP:1498)
+[2026-10-19 19:18:07]   + vpn295591771.opengw.net (Japan, 787.79 Mbps, TCP:1619)
+[2026-10-19 19:18:07]   + vpn686914656.opengw.net (Japan, 698.72 Mbps, TCP:1307)
+[2026-10-19 19:18:07]   + vpn582729051.opengw.net (Japan, 598.29 Mbps, TCP:1885)
+[2026-10-19 19:18:07]   ... 另有 38 个未列出
+[2026-10-19 19:18:07] vpngate.txt 已重建: 1296 条
+[2026-10-19 19:18:07] 完成
