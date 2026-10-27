@@ -15,7 +15,7 @@
 |---|---|
 | **v2rayN / Shadowrocket / Streisand 等**（VLESS + WebSocket，每行一条） | `https://raw.githubusercontent.com/sdise/vpngate/main/vpngate-v2ray.txt` |
 | **Clash / Clash Verge / Mihomo 等**（YAML 配置） | `https://raw.githubusercontent.com/sdise/vpngate/main/vpngate-clash.yaml` |
-| **VLESS + XHTTP**（`mode=stream-one` + xPadding 混淆，每行一条） | `https://raw.githubusercontent.com/sdise/vpngate/main/vpngate-xhttp.txt` |
+| **VLESS + WebSocket**（与 v2rayN 订阅同内容，沿用旧文件名） | `https://raw.githubusercontent.com/sdise/vpngate/main/vpngate-xhttp.txt` |
 
 国内访问 GitHub raw 较慢时，可换 jsdelivr 加速镜像（内容相同）：
 
@@ -23,7 +23,7 @@
 |---|---|
 | v2rayN 系（VLESS ws） | `https://cdn.jsdelivr.net/gh/sdise/vpngate@main/vpngate-v2ray.txt` |
 | Clash 系 | `https://cdn.jsdelivr.net/gh/sdise/vpngate@main/vpngate-clash.yaml` |
-| VLESS XHTTP | `https://cdn.jsdelivr.net/gh/sdise/vpngate@main/vpngate-xhttp.txt` |
+| VLESS ws（xhttp 文件名） | `https://cdn.jsdelivr.net/gh/sdise/vpngate@main/vpngate-xhttp.txt` |
 
 ---
 
@@ -345,8 +345,8 @@
 | 原始库 | `vpngate.csv` —— 全部采集节点（只增不减，每周用有效库覆盖清理一次） |
 | 全量列表 | `vpngate.txt` —— 原始库全部节点的 VLESS 链接（未经检测），检测的输入 |
 | 有效库 | `vpngate_tested.csv` —— xray 实测有效的节点 |
-| 订阅文件 | `vpngate-v2ray.txt`（VLESS ws）/ `vpngate-clash.yaml`（Clash）/ `vpngate-xhttp.txt`（VLESS XHTTP），均由有效库生成 |
-| 入口地址 | `saas.sin.fan:443`（VLESS 链接中的 `@` 后地址） |
+| 订阅文件 | `vpngate-v2ray.txt`（VLESS ws）/ `vpngate-clash.yaml`（Clash）/ `vpngate-xhttp.txt`（VLESS ws，沿用旧文件名），均由有效库生成 |
+| 入口地址 | `singgcdn.singgnetworkcdn.com:443`（VLESS 链接中的 `@` 后地址） |
 | 更新频率 | **每 3 小时**：抓取增量 + 检测有效性 + 重建订阅（外部定时器触发 `sync.yml`） |
 | 每周清理 | **每 7 天**用有效库覆盖原始库，防止无效节点越积越多 |
 | 转换原理 | 见 [`vpngate.md`](vpngate.md)（模板拆解、fdip 路径方案详解） |
@@ -362,11 +362,11 @@
 | `vpngate_tested.csv` | 有效库：xray 实测有效的节点（全量重写）；比原始库多 `IsResidential` / `FraudScore` / `ExitIP` 三列（经节点请求 `my.ippure.com/v1/info` 采集的画像） |
 | `vpngate-v2ray.txt` | v2rayN 系订阅：VLESS + WebSocket 分享链接，每行一条（由有效库生成） |
 | `vpngate-clash.yaml` | Clash 系订阅：完整 YAML 配置 —— **含国内外分流**（私有网段 + `GEOIP,CN` 直连，其余走代理）、**两个代理组**（手动选择，含 `DIRECT`；`url-test` 自动测速）、**DNS 段**（fake-ip + 国内优先解析）；由有效库生成，可直接作为订阅链接 |
-| `vpngate-xhttp.txt` | VLESS + XHTTP 订阅：`mode=stream-one` + xPadding 混淆，每行一条（由有效库生成） |
+| `vpngate-xhttp.txt` | VLESS + WebSocket 订阅：与 `vpngate-v2ray.txt` 同内容，沿用旧文件名（历史曾为 XHTTP，2026-10-27 起改为 ws） |
 | `vpngate-daily.py` | 主脚本：抓取 API → 过滤 TCP 中继 → 增量写原始库；内含订阅生成函数 |
 | `vpngate.md` | **转换原理详解**：API 字段、过滤规则、VLESS 模板、`fdip=sstp://…` 路径方案、备注格式 |
 | `scripts/test_nodes.py` | 有效性检测脚本：xray 实测每条链接 → 经节点采集 IP 画像（家宽/机房、纯净度、落地 IP）→ 写有效库 → 重建订阅（不碰原始库） |
-| `scripts/build_xhttp.py` | 由有效库生成 `vpngate-xhttp.txt`（VLESS + XHTTP） |
+| `scripts/build_xhttp.py` | 由有效库生成 `vpngate-xhttp.txt`（VLESS + ws，复用统一链接模板） |
 | `scripts/sstp_check.py` | 轻量节点探测：直接对节点做 SSTP 握手（纯标准库，无需 xray），用于体检/排查 |
 | `scripts/gen_readme.py` | 统计脚本：把总节点、有效节点与各国最快链接写回本文件的自动区块 |
 | `.github/workflows/sync.yml` | 主工作流：每 3 小时「抓取 + 检测 + 重建订阅 + 提交」（外部定时器触发） |
@@ -380,17 +380,17 @@
 每条链接形如（已解码示意）：
 
 ```text
-vless://<UUID>@saas.sin.fan:443?encryption=none&security=tls
-  &sni=snip.edgeoneai.cc.cd&fp=chrome&alpn=h3,h2&type=ws
-  &host=snip.edgeoneai.cc.cd
+vless://<UUID>@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls
+  &sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3,h2&type=ws
+  &host=snippet.edgeoneai.cc.cd
   &path=/fdip=sstp://vpn:vpn@vpn228702251.opengw.net:1587?ed=2560
   #家宽|纯净度:7|Japan|241.51|落地:219.100.37.15
 ```
 
 **两段式设计**，重点理解：
 
-1. **入口（固定）**：`saas.sin.fan:443` —— VLESS + TLS + WebSocket 接入点；
-   SNI/Host 为 `snip.edgeoneai.cc.cd`，TLS 指纹伪装 chrome。
+1. **入口（固定）**：`singgcdn.singgnetworkcdn.com:443` —— VLESS + TLS + WebSocket 接入点；
+   SNI/Host 为 `snippet.edgeoneai.cc.cd`，TLS 指纹伪装 chrome。
 2. **出口（每行不同）**：`path` 中的
    `/fdip=sstp://vpn:vpn@{hostname}:{tcp_port}?ed=2560` —— 入口收到连接后，
    用 **SSTP 协议**（账号 `vpn`/`vpn`）拨号到对应的 VPNGate 志愿者节点，
@@ -457,9 +457,9 @@ vless://<UUID>@saas.sin.fan:443?encryption=none&security=tls
 
 ## ⚠️ 风险提示
 
-1. **入口依赖 Cloudflare Workers**：`saas.sin.fan` 背后为 Cloudflare 网络。
-   Cloudflare 服务条款 2.2.1(j) 明确禁止未经书面许可“提供 VPN 或类似代理服务”，
-   相关账号存在被封禁风险，请自行评估。
+1. **入口依赖第三方 CDN**：入口 `singgcdn.singgnetworkcdn.com`（SNI/Host
+   `snippet.edgeoneai.cc.cd`）为第三方 CDN 转发服务，存在服务中断、封禁或
+   条款限制风险（2026-10-24 ~ 10-27 曾因旧入口宕机导致订阅停更三天），请自行评估。
 2. **节点为志愿者提供**：VPNGate 中继由全球志愿者运行，随时上下线，
    且流量经过第三方节点，**不要传输敏感信息**。
 3. **异常节点**：`_unregistered_vpn335506854.opengw.net` 为全表唯一非标准注册

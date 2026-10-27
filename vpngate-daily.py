@@ -57,17 +57,18 @@ CLASH_PATH = os.environ.get("VPNGATE_CLASH", _default_in_csv_dir("vpngate-clash.
 TXT_PATH = os.environ.get("VPNGATE_TXT", _default_in_csv_dir("vpngate.txt"))
 
 # v2rayN 分享链接模板(见用户 2026-09-26 提供的模板链接;
-# 2026-09-27 起入口地址由 61.172.182.19 改为 saas.sin.fan)
+# 2026-09-27 入口地址由 61.172.182.19 改为 saas.sin.fan;
+# 2026-10-27 入口改为 singgcdn.singgnetworkcdn.com, Host/SNI 改为 snippet.edgeoneai.cc.cd)
 VLESS_UUID = "495c7195-85b8-498a-bf20-2ea9ce9175b5"
-VLESS_SERVER = "saas.sin.fan:443"
+VLESS_SERVER = "singgcdn.singgnetworkcdn.com:443"
 VLESS_BASE = (
     f"vless://{VLESS_UUID}@{VLESS_SERVER}"
-    "?encryption=none&security=tls&sni=snip.edgeoneai.cc.cd"
-    "&fp=chrome&alpn=h3%2Ch2&type=ws&host=snip.edgeoneai.cc.cd&path="
+    "?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd"
+    "&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path="
 )
 
 # Clash 订阅固定参数(与 VLESS 模板同源)
-CLASH_SNI = "snip.edgeoneai.cc.cd"
+CLASH_SNI = "snippet.edgeoneai.cc.cd"
 
 # ---------------------------------------------------------------------------
 # Clash 国内外分流

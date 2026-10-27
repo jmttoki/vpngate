@@ -1,7 +1,7 @@
 # vpngate.md — VPNGate 数据获取与 VLESS 链接转换详解
 
 > 本文档详细说明 `vpngate.csv` 的数据来源、过滤规则，以及如何将其转换为
-> `vpngate-v2ray.txt` 中的 v2rayN 分享链接（含 `saas.sin.fan` 入口替换与
+> `vpngate-v2ray.txt` 中的 v2rayN 分享链接（含 `singgcdn.singgnetworkcdn.com` 入口替换与
 > `fdip` 路径方案的完整拆解）。
 
 ---
@@ -49,8 +49,8 @@ Japan,vpn228702251.opengw.net,219.100.37.214,523.10,1587
 每条分享链接由“固定模板 + 节点相关 path + 备注”拼接而成。模板取自用户提供的自有 VLESS 链接：
 
 ```
-vless://<UUID>@<SERVER>?encryption=none&security=tls&sni=snip.edgeoneai.cc.cd
-  &fp=chrome&alpn=h3%2Ch2&type=ws&host=snip.edgeoneai.cc.cd&path=<PATH>#<NAME>
+vless://<UUID>@<SERVER>?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd
+  &fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=<PATH>#<NAME>
 ```
 
 固定参数说明：
@@ -58,14 +58,14 @@ vless://<UUID>@<SERVER>?encryption=none&security=tls&sni=snip.edgeoneai.cc.cd
 | 参数 | 值 | 说明 |
 |---|---|---|
 | UUID | `495c7195-85b8-498a-bf20-2ea9ce9175b5` | 用户自有 VLESS 账号的 UUID |
-| SERVER | `saas.sin.fan:443` | **入口地址（2026-09-27 起由 `61.172.182.19:443` 替换）** |
+| SERVER | `singgcdn.singgnetworkcdn.com:443` | **入口地址（2026-09-27 起由 `61.172.182.19:443` 替换）** |
 | encryption | `none` | VLESS 无内层加密（外层靠 TLS） |
 | security | `tls` | 传输层 TLS |
-| sni | `snip.edgeoneai.cc.cd` | TLS SNI |
+| sni | `snippet.edgeoneai.cc.cd` | TLS SNI |
 | fp | `chrome` | TLS 指纹伪装 |
 | alpn | `h3,h2` | ALPN（URL 编码为 `h3%2Ch2`） |
 | type | `ws` | WebSocket 传输 |
-| host | `snip.edgeoneai.cc.cd` | WebSocket Host 头 |
+| host | `snippet.edgeoneai.cc.cd` | WebSocket Host 头 |
 
 ## 5. `path` 的构成：fdip 方案（核心）
 
@@ -81,11 +81,11 @@ vless://<UUID>@<SERVER>?encryption=none&security=tls&sni=snip.edgeoneai.cc.cd
 /fdip=sstp://vpn:vpn@vpn228702251.opengw.net:1587?ed=2560
 ```
 
-含义：入口 Worker（`saas.sin.fan:443`）收到 WebSocket 连接后，读取 `fdip`
+含义：入口 Worker（`singgcdn.singgnetworkcdn.com:443`）收到 WebSocket 连接后，读取 `fdip`
 参数，使用 **SSTP 协议**、以用户名/密码 `vpn`/`vpn` 拨号到对应的 VPNGate
 志愿者节点（`ed=2560` 为 SSTP 加密参数），再把流量桥接回去。也就是说：
 
-- **入口**（固定）：`saas.sin.fan:443` —— 用户自己的 Cloudflare Workers
+- **入口**（固定）：`singgcdn.singgnetworkcdn.com:443` —— 用户自己的 Cloudflare Workers
 - **出口**（每行不同）：`{hostname}:{tcp_port}` —— VPNGate 志愿者 SSTP 节点
 
 ## 6. 备注（`#` 后面的名字）构成
@@ -125,14 +125,14 @@ vless://<UUID>@<SERVER>?encryption=none&security=tls&sni=snip.edgeoneai.cc.cd
 ## 7. 完整链接示例（拆解）
 
 ```text
-vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@saas.sin.fan:443
+vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443
   ?encryption=none
   &security=tls
-  &sni=snip.edgeoneai.cc.cd
+  &sni=snippet.edgeoneai.cc.cd
   &fp=chrome
   &alpn=h3%2Ch2
   &type=ws
-  &host=snip.edgeoneai.cc.cd
+  &host=snippet.edgeoneai.cc.cd
   &path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn228702251.opengw.net%3A1587%3Fed%3D2560
   #%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A7%7CJapan%7C241.51%7C%E8%90%BD%E5%9C%B0%3A219.100.37.15
 ```
@@ -191,19 +191,19 @@ GET https://my.ippure.com/v1/info
 ```yaml
 - name: "家宽|纯净度:7|Japan|241.51|落地:219.100.37.15"  # 与 VLESS 备注同格式
   type: vless
-  server: saas.sin.fan
+  server: singgcdn.singgnetworkcdn.com
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
   tls: true
   udp: false
-  sni: snip.edgeoneai.cc.cd
+  sni: snippet.edgeoneai.cc.cd
   fingerprint: chrome
   alpn: [h3, h2]
   ws-opts:
     path: /fdip=sstp://vpn:vpn@vpn228702251.opengw.net:1587?ed=2560
     headers:
-      Host: snip.edgeoneai.cc.cd
+      Host: snippet.edgeoneai.cc.cd
 ```
 
 文件里除了节点，还带有 **DNS 段**、**两个代理组** 和一套**国内外分流规则**，

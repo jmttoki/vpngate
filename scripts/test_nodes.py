@@ -18,7 +18,7 @@
    vpngate-v2ray.txt (v2rayN) 与 vpngate-clash.yaml (Clash)。
 
 安全护栏:
-- 先 TCP 探测入口地址 (saas.sin.fan:443); 不可达则直接中止, 不写任何文件。
+- 先 TCP 探测入口地址 (singgcdn.singgnetworkcdn.com:443); 不可达则直接中止, 不写任何文件。
 - 若有效链接比例低于 MIN_VALID_RATIO (默认 20%), 判定为系统性故障
   (入口异常而非节点失效), 中止, 不写任何文件。
 

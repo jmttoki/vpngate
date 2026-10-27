@@ -1,46 +1,26 @@
 #!/usr/bin/env python3
 """
-由有效库(vpngate_tested.csv)生成 vpngate-xhttp.txt —— VLESS + XHTTP 分享链接。
+由有效库(vpngate_tested.csv)生成 vpngate-xhttp.txt —— VLESS + WebSocket 分享链接。
 
-与 vpngate-v2ray.txt 的区别仅在传输层:
-  - vpngate-v2ray.txt : VLESS + WebSocket (type=ws)
-  - vpngate-xhttp.txt : VLESS + XHTTP, mode=stream-one, 附带 xPadding 混淆 extra
-
-链接模板(除 type/mode/extra 外与 ws 版本一致):
-  vless://<uuid>@saas.sin.fan:443?encryption=none&security=tls
-    &sni=snip.edgeoneai.cc.cd&fp=chrome&alpn=h3,h2
-    &type=xhttp&host=snip.edgeoneai.cc.cd
-    &path=<fdip path>&mode=stream-one&extra=<urlencoded json>
-    #家宽|纯净度:7|Japan|241.51|落地:219.100.37.15   (无画像数据时回退 #Japan|241.51)
+历史: 2026-09-29 ~ 2026-10-27 该文件为 VLESS + XHTTP(mode=stream-one + xPadding 混淆);
+2026-10-27 起按用户要求改为与 vpngate-v2ray.txt 相同的 VLESS + WebSocket 传输。
+保留原文件名/订阅 URL 不变, 已导入该订阅地址的客户端无需更换。
 
 环境变量:
   VPNGATE_TESTED_CSV  有效库路径 (默认: 仓库根 vpngate_tested.csv)
   VPNGATE_XHTTP       输出路径   (默认: 仓库根 vpngate-xhttp.txt)
 
-仅使用标准库; 模板常量复用 vpngate-daily.py, 保证与其它订阅同源。
+仅使用标准库; 链接生成复用 vpngate-daily.py 的 build_vless_link, 保证与其它订阅同源。
 """
 
 import csv
 import importlib.util
-import json
 import os
 import sys
-from urllib.parse import quote
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TESTED_CSV_PATH = os.environ.get("VPNGATE_TESTED_CSV", os.path.join(REPO_ROOT, "vpngate_tested.csv"))
 XHTTP_PATH = os.environ.get("VPNGATE_XHTTP", os.path.join(REPO_ROOT, "vpngate-xhttp.txt"))
-
-# XHTTP 传输模式与 extra 混淆参数(用户指定)
-XHTTP_MODE = "stream-one"
-XHTTP_EXTRA = {
-    "xPaddingBytes": "100-500",
-    "xPaddingObfsMode": True,
-    "xPaddingMethod": "tokenish",
-    "xPaddingPlacement": "queryInHeader",
-    "xPaddingHeader": "X-Cache",
-    "xPaddingKey": "_dc",
-}
 
 
 def load_daily_module():
@@ -49,30 +29,6 @@ def load_daily_module():
     mod = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(mod)
     return mod
-
-
-def build_xhttp_link(daily, row):
-    """由 CSV 行字段拼出一条 VLESS+XHTTP 分享链接; 字段缺失返回 None。
-
-    备注与 vpngate-v2ray.txt 保持同源(见 vpngate-daily.py 的 remark())。
-    """
-    country = (row.get("Country") or "").strip()
-    hostname = (row.get("Hostname") or "").strip()
-    tcp_port = str(row.get("TCP_Port") if row.get("TCP_Port") is not None else "").strip()
-    if not (country and hostname and tcp_port):
-        return None
-    path = quote(daily.fdip_path(hostname, tcp_port), safe="")
-    name = quote(daily.remark(row), safe="")
-    extra = quote(json.dumps(XHTTP_EXTRA, separators=(",", ":"), ensure_ascii=False), safe="")
-    sni = daily.CLASH_SNI
-    return (
-        f"vless://{daily.VLESS_UUID}@{daily.VLESS_SERVER}"
-        "?encryption=none&security=tls"
-        f"&sni={sni}&fp=chrome&alpn=h3%2Ch2"
-        f"&type=xhttp&host={sni}"
-        f"&path={path}&mode={XHTTP_MODE}&extra={extra}"
-        f"#{name}"
-    )
 
 
 def main():
@@ -84,7 +40,7 @@ def main():
         rows = list(csv.DictReader(f))
     links = []
     for r in rows:
-        link = build_xhttp_link(daily, r)
+        link = daily.build_vless_link(r)
         if link:
             links.append(link)
     with open(XHTTP_PATH, "w", encoding="utf-8") as f:

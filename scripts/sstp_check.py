@@ -3,7 +3,7 @@
 直接对 VPNGate 公共节点做 SSTP 握手, 验证节点是否有效。
 
 与 scripts/test_nodes.py 的区别:
-  - 不需要 xray 内核, 不需要 vless 入口 (saas.sin.fan), 只用 Python 标准库;
+  - 不需要 xray 内核, 不需要 vless 入口 (singgcdn.singgnetworkcdn.com), 只用 Python 标准库;
   - 直接连节点本身 (链接 path 里的 sstp://vpn:vpn@host:port), 验证的是
     "这个 VPNGate 节点还活着", 而不是 "入口 + 节点整条链路可用"。
 
