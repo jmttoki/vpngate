@@ -132,7 +132,7 @@ jobs:
           IPINFO_TIMEOUT: "10"
         run: python scripts/test_nodes.py
 
-      - name: 生成 vpngate-xhttp.txt (VLESS + XHTTP)
+      - name: 生成 vpngate-xhttp.txt (VLESS + ws)
         env:
           VPNGATE_TESTED_CSV: vpngate_tested.csv
           VPNGATE_XHTTP: vpngate-xhttp.txt
