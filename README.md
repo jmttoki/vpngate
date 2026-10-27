@@ -35,26 +35,27 @@
 ### 原始库（每 3 小时抓取后更新）
 
 <!-- BEGIN:TOTAL -->
-> 更新时间：2026-10-27 15:03 UTC ｜ 原始库累计 **857** 个节点，覆盖 **28** 个国家/地区
+> 更新时间：2026-10-27 15:27 UTC ｜ 原始库累计 **909** 个节点，覆盖 **29** 个国家/地区
 <!-- END:TOTAL -->
 
 ### 有效节点（每 3 小时检测后更新）
 
 <!-- BEGIN:TESTED -->
-> 检测时间：2026-10-27 15:03 UTC ｜ 实测有效 **576** 个节点，覆盖 **24** 个国家/地区，平均速度 **258 Mbps**
+> 检测时间：2026-10-27 15:27 UTC ｜ 实测有效 **583** 个节点，覆盖 **25** 个国家/地区，平均速度 **247 Mbps**
 
 #### 各国有效节点数
 
 | 国家/地区 | 有效节点 | 平均速度 | 最高速度 |
 |---|---:|---:|---:|
-| Japan | 256 | 330 Mbps | 3573 Mbps |
-| Korea Republic of | 241 | 211 Mbps | 885 Mbps |
-| Russian Federation | 31 | 133 Mbps | 581 Mbps |
-| Thailand | 9 | 355 Mbps | 700 Mbps |
-| United States | 8 | 205 Mbps | 375 Mbps |
-| Viet Nam | 7 | 200 Mbps | 725 Mbps |
-| Australia | 3 | 137 Mbps | 278 Mbps |
-| Canada | 2 | 119 Mbps | 221 Mbps |
+| Japan | 265 | 307 Mbps | 3573 Mbps |
+| Korea Republic of | 233 | 205 Mbps | 885 Mbps |
+| Russian Federation | 28 | 130 Mbps | 581 Mbps |
+| Thailand | 13 | 368 Mbps | 700 Mbps |
+| Viet Nam | 11 | 160 Mbps | 725 Mbps |
+| United States | 7 | 183 Mbps | 375 Mbps |
+| Canada | 3 | 104 Mbps | 221 Mbps |
+| Australia | 2 | 162 Mbps | 278 Mbps |
+| Hong Kong | 2 | 212 Mbps | 406 Mbps |
 | Mexico | 2 | 196 Mbps | 310 Mbps |
 | Ukraine | 2 | 41 Mbps | 55 Mbps |
 | United Kingdom | 2 | 260 Mbps | 418 Mbps |
@@ -62,113 +63,123 @@
 | France | 1 | 112 Mbps | 112 Mbps |
 | Greece | 1 | 58 Mbps | 58 Mbps |
 | Grenada | 1 | 26 Mbps | 26 Mbps |
-| Hong Kong | 1 | 406 Mbps | 406 Mbps |
 | India | 1 | 175 Mbps | 175 Mbps |
 | Italy | 1 | 14 Mbps | 14 Mbps |
 | Latvia | 1 | 32 Mbps | 32 Mbps |
 | Lithuania | 1 | 193 Mbps | 193 Mbps |
 | Malaysia | 1 | 357 Mbps | 357 Mbps |
 | Norway | 1 | 135 Mbps | 135 Mbps |
+| Slovenia | 1 | 14 Mbps | 14 Mbps |
 | Turkey | 1 | 23 Mbps | 23 Mbps |
 | United Arab Emirates | 1 | 39 Mbps | 39 Mbps |
 
 #### 各国最快的链接（每国最多 5 条，不足则全部列出）
 
 <details>
-<summary>Japan —— 256 个有效节点（最快 5 条）</summary>
+<summary>Japan —— 265 个有效节点（最快 5 条）</summary>
 
   ```text
   vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn517690502.opengw.net%3A1461%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A6%7CJapan%7C3573.34%7C%E8%90%BD%E5%9C%B0%3A118.156.174.68
   vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn594251655.opengw.net%3A1354%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A5%7CJapan%7C2384.46%7C%E8%90%BD%E5%9C%B0%3A121.103.81.209
-  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn393802235.opengw.net%3A1908%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A0%7CJapan%7C2293.70%7C%E8%90%BD%E5%9C%B0%3A14.132.15.82
   vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn588628359.opengw.net%3A1471%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A4%7CJapan%7C1610.69%7C%E8%90%BD%E5%9C%B0%3A222.14.233.171
   vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn252703156.opengw.net%3A1734%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A9%7CJapan%7C976.15%7C%E8%90%BD%E5%9C%B0%3A202.157.252.10
+  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn590952084.opengw.net%3A1241%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A8%7CJapan%7C962.93%7C%E8%90%BD%E5%9C%B0%3A27.92.196.60
   ```
 
 </details>
 
 <details>
-<summary>Korea Republic of —— 241 个有效节点（最快 5 条）</summary>
+<summary>Korea Republic of —— 233 个有效节点（最快 5 条）</summary>
 
   ```text
   vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn141353891.opengw.net%3A1632%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A4%7CKorea%20Republic%20of%7C884.60%7C%E8%90%BD%E5%9C%B0%3A211.44.188.45
   vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn884817225.opengw.net%3A1920%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A4%7CKorea%20Republic%20of%7C873.20%7C%E8%90%BD%E5%9C%B0%3A211.44.188.45
-  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn572700467.opengw.net%3A1388%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A5%7CKorea%20Republic%20of%7C855.06%7C%E8%90%BD%E5%9C%B0%3A221.143.119.128
   vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn610812005.opengw.net%3A995%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A84%7CKorea%20Republic%20of%7C849.54%7C%E8%90%BD%E5%9C%B0%3A49.168.191.160
   vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn384709964.opengw.net%3A995%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A3%7CKorea%20Republic%20of%7C844.59%7C%E8%90%BD%E5%9C%B0%3A61.81.206.201
+  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn405907076.opengw.net%3A1387%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A3%7CKorea%20Republic%20of%7C783.50%7C%E8%90%BD%E5%9C%B0%3A119.195.163.98
   ```
 
 </details>
 
 <details>
-<summary>Russian Federation —— 31 个有效节点（最快 5 条）</summary>
+<summary>Russian Federation —— 28 个有效节点（最快 5 条）</summary>
 
   ```text
   vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn501803801.opengw.net%3A1577%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A9%7CRussian%20Federation%7C581.15%7C%E8%90%BD%E5%9C%B0%3A5.143.19.164
-  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn536329081.opengw.net%3A1965%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A8%7CRussian%20Federation%7C341.31%7C%E8%90%BD%E5%9C%B0%3A5.143.7.88
   vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn397955876.opengw.net%3A1938%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A9%7CRussian%20Federation%7C329.47%7C%E8%90%BD%E5%9C%B0%3A77.35.186.215
   vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn353146232.opengw.net%3A1995%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A2%7CRussian%20Federation%7C318.23%7C%E8%90%BD%E5%9C%B0%3A212.164.214.213
   vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn841630221.opengw.net%3A1622%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A0%7CRussian%20Federation%7C247.05%7C%E8%90%BD%E5%9C%B0%3A94.190.111.171
+  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn103832537.opengw.net%3A1347%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A3%7CRussian%20Federation%7C220.84%7C%E8%90%BD%E5%9C%B0%3A178.166.200.26
   ```
 
 </details>
 
 <details>
-<summary>Thailand —— 9 个有效节点（最快 5 条）</summary>
+<summary>Thailand —— 13 个有效节点（最快 5 条）</summary>
 
   ```text
   vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn113281460.opengw.net%3A1589%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A17%7CThailand%7C699.79%7C%E8%90%BD%E5%9C%B0%3A58.136.76.39
-  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn748064328.opengw.net%3A1841%3Fed%3D2560#Thailand%7C531.45
+  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn748064328.opengw.net%3A1841%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A3%7CThailand%7C531.45%7C%E8%90%BD%E5%9C%B0%3A58.136.195.134
+  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn855688522.opengw.net%3A1428%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A6%7CThailand%7C486.10%7C%E8%90%BD%E5%9C%B0%3A27.130.40.124
+  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn968104007.opengw.net%3A1588%3Fed%3D2560#Thailand%7C471.44
   vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn824324170.opengw.net%3A1447%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A9%7CThailand%7C453.61%7C%E8%90%BD%E5%9C%B0%3A49.48.128.115
-  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn156765013.opengw.net%3A1801%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A7%7CThailand%7C429.09%7C%E8%90%BD%E5%9C%B0%3A171.5.11.106
-  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40idcrmn2.opengw.net%3A444%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A8%7CThailand%7C353.98%7C%E8%90%BD%E5%9C%B0%3A180.183.130.246
   ```
 
 </details>
 
 <details>
-<summary>United States —— 8 个有效节点（最快 5 条）</summary>
+<summary>Viet Nam —— 11 个有效节点（最快 5 条）</summary>
+
+  ```text
+  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn864131273.opengw.net%3A995%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A12%7CViet%20Nam%7C724.53%7C%E8%90%BD%E5%9C%B0%3A42.119.44.141
+  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn778475680.opengw.net%3A1225%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A8%7CViet%20Nam%7C161.71%7C%E8%90%BD%E5%9C%B0%3A42.115.17.230
+  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn842914014.opengw.net%3A1329%3Fed%3D2560#Viet%20Nam%7C158.82
+  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn764427404.opengw.net%3A1716%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A7%7CViet%20Nam%7C135.80%7C%E8%90%BD%E5%9C%B0%3A14.169.115.88
+  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn949158831.opengw.net%3A1660%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A21%7CViet%20Nam%7C122.40%7C%E8%90%BD%E5%9C%B0%3A42.113.175.170
+  ```
+
+</details>
+
+<details>
+<summary>United States —— 7 个有效节点（最快 5 条）</summary>
 
   ```text
   vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn673282738.opengw.net%3A1815%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A7%7CUnited%20States%7C374.89%7C%E8%90%BD%E5%9C%B0%3A65.184.124.117
   vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn918840683.opengw.net%3A1245%3Fed%3D2560#%E6%9C%BA%E6%88%BF%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A36%7CUnited%20States%7C348.58%7C%E8%90%BD%E5%9C%B0%3A38.34.239.132
   vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn575281029.opengw.net%3A1659%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A5%7CUnited%20States%7C347.52%7C%E8%90%BD%E5%9C%B0%3A47.154.9.38
-  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn164693092.opengw.net%3A1363%3Fed%3D2560#%E6%9C%BA%E6%88%BF%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A72%7CUnited%20States%7C261.90%7C%E8%90%BD%E5%9C%B0%3A38.71.123.196
-  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn924983651.opengw.net%3A1442%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A1%7CUnited%20States%7C176.72%7C%E8%90%BD%E5%9C%B0%3A50.39.166.245
+  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn787143056.opengw.net%3A1603%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A3%7CUnited%20States%7C75.72%7C%E8%90%BD%E5%9C%B0%3A174.85.128.142
+  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn518122287.opengw.net%3A1960%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A4%7CUnited%20States%7C67.17%7C%E8%90%BD%E5%9C%B0%3A73.16.124.95
   ```
 
 </details>
 
 <details>
-<summary>Viet Nam —— 7 个有效节点（最快 5 条）</summary>
+<summary>Canada —— 3 个有效节点（全部 3 条）</summary>
 
   ```text
-  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn864131273.opengw.net%3A995%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A12%7CViet%20Nam%7C724.53%7C%E8%90%BD%E5%9C%B0%3A42.119.44.141
-  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn778475680.opengw.net%3A1225%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A8%7CViet%20Nam%7C161.71%7C%E8%90%BD%E5%9C%B0%3A42.115.17.230
-  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn842914014.opengw.net%3A1329%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A6%7CViet%20Nam%7C158.82%7C%E8%90%BD%E5%9C%B0%3A118.68.222.29
-  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn949158831.opengw.net%3A1660%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A21%7CViet%20Nam%7C122.40%7C%E8%90%BD%E5%9C%B0%3A42.113.175.170
-  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn665155582.opengw.net%3A1337%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A6%7CViet%20Nam%7C108.08%7C%E8%90%BD%E5%9C%B0%3A118.68.222.29
+  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn638699615.opengw.net%3A995%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A6%7CCanada%7C221.35%7C%E8%90%BD%E5%9C%B0%3A154.27.38.113
+  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn682408352.opengw.net%3A1531%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A1%7CCanada%7C72.94%7C%E8%90%BD%E5%9C%B0%3A76.70.76.106
+  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn491348575.opengw.net%3A1697%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A3%7CCanada%7C17.42%7C%E8%90%BD%E5%9C%B0%3A184.68.30.116
   ```
 
 </details>
 
 <details>
-<summary>Australia —— 3 个有效节点（全部 3 条）</summary>
+<summary>Australia —— 2 个有效节点（全部 2 条）</summary>
 
   ```text
-  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn103948172.opengw.net%3A1785%3Fed%3D2560#Australia%7C278.48
-  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn759761201.opengw.net%3A1521%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A61%7CAustralia%7C86.76%7C%E8%90%BD%E5%9C%B0%3A125.253.56.120
+  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn103948172.opengw.net%3A1785%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A3%7CAustralia%7C278.48%7C%E8%90%BD%E5%9C%B0%3A120.147.155.231
   vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn911912049.opengw.net%3A1446%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A2%7CAustralia%7C44.65%7C%E8%90%BD%E5%9C%B0%3A1.159.52.103
   ```
 
 </details>
 
 <details>
-<summary>Canada —— 2 个有效节点（全部 2 条）</summary>
+<summary>Hong Kong —— 2 个有效节点（全部 2 条）</summary>
 
   ```text
-  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn638699615.opengw.net%3A995%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A6%7CCanada%7C221.35%7C%E8%90%BD%E5%9C%B0%3A154.27.38.113
-  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn491348575.opengw.net%3A1697%3Fed%3D2560#Canada%7C17.42
+  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn807319024.opengw.net%3A1760%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A4%7CHong%20Kong%7C406.48%7C%E8%90%BD%E5%9C%B0%3A113.28.199.46
+  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn986755484.opengw.net%3A1852%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A11%7CHong%20Kong%7C17.73%7C%E8%90%BD%E5%9C%B0%3A58.152.29.26
   ```
 
 </details>
@@ -216,7 +227,7 @@
 <summary>France —— 1 个有效节点（全部 1 条）</summary>
 
   ```text
-  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40snmarron.opengw.net%3A992%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A9%7CFrance%7C112.14%7C%E8%90%BD%E5%9C%B0%3A45.152.19.83
+  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40snmarron.opengw.net%3A992%3Fed%3D2560#France%7C112.14
   ```
 
 </details>
@@ -240,19 +251,10 @@
 </details>
 
 <details>
-<summary>Hong Kong —— 1 个有效节点（全部 1 条）</summary>
-
-  ```text
-  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn807319024.opengw.net%3A1760%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A4%7CHong%20Kong%7C406.48%7C%E8%90%BD%E5%9C%B0%3A113.28.199.46
-  ```
-
-</details>
-
-<details>
 <summary>India —— 1 个有效节点（全部 1 条）</summary>
 
   ```text
-  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn359610091.opengw.net%3A995%3Fed%3D2560#%E6%9C%BA%E6%88%BF%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A87%7CIndia%7C174.73%7C%E8%90%BD%E5%9C%B0%3A103.78.12.196
+  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn359610091.opengw.net%3A995%3Fed%3D2560#India%7C174.73
   ```
 
 </details>
@@ -298,6 +300,15 @@
 
   ```text
   vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn239866555.opengw.net%3A1843%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A2%7CNorway%7C135.00%7C%E8%90%BD%E5%9C%B0%3A81.191.241.27
+  ```
+
+</details>
+
+<details>
+<summary>Slovenia —— 1 个有效节点（全部 1 条）</summary>
+
+  ```text
+  vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@singgcdn.singgnetworkcdn.com:443?encryption=none&security=tls&sni=snippet.edgeoneai.cc.cd&fp=chrome&alpn=h3%2Ch2&type=ws&host=snippet.edgeoneai.cc.cd&path=%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn511733383.opengw.net%3A1588%3Fed%3D2560#%E5%AE%B6%E5%AE%BD%7C%E7%BA%AF%E5%87%80%E5%BA%A6%3A5%7CSlovenia%7C14.43%7C%E8%90%BD%E5%9C%B0%3A95.176.173.17
   ```
 
 </details>
